@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="def_title_name" type="id"/>
+    <item name="def_title_time" type="id"/>
+    <item name="def_title_phone" type="id"/>
+
+    <item name="set_back" type="id"/>
+    <item name="set_putaway_ly" type="id"/>
+    <item name="set_debug_ly" type="id"/>
+    <item name="set_basics_ly" type="id"/>
+    <item name="set_about_ly" type="id"/>
+
+    <item name="cabinet_back" type="id"/>
+    <item name="cabinet_clear" type="id"/>
+    <item name="cabinet_list" type="id"/>
+
+    <item name="cabinet_test_back" type="id"/>
+    <item name="cabinet_test_list" type="id"/>
+
+    <item name="item_cabinet_floor" type="id"/>
+    <item name="item_cabinet_list" type="id"/>
+
+    <item name="item_goods_iv" type="id"/>
+    <item name="item_goods_num" type="id"/>
+    <item name="item_goods_stock" type="id"/>
+    <item name="item_goods_test" type="id"/>
+
+    <item name="goods_row" type="id"/>
+    <item name="goods_column" type="id"/>
+    <item name="goods_close" type="id"/>
+    <item name="goods_iv" type="id"/>
+    <item name="goods_name" type="id"/>
+    <item name="goods_price" type="id"/>
+    <item name="goods_stock" type="id"/>
+    <item name="goods_change" type="id"/>
+    <item name="goods_delete" type="id"/>
+    <item name="goods_clear" type="id"/>
+    <item name="goods_sub" type="id"/>
+    <item name="goods_add" type="id"/>
+    <item name="goods_num" type="id"/>
+    <item name="goods_save" type="id"/>
+
+    <item name="basic_back" type="id"/>
+    <item name="basic_api_ly" type="id"/>
+    <item name="basic_api_tv" type="id"/>
+    <item name="basic_code_btn" type="id"/>
+    <item name="basic_shop_ly" type="id"/>
+    <item name="basic_shop_tv" type="id"/>
+    <item name="basic_term_ly" type="id"/>
+    <item name="basic_term_tv" type="id"/>
+    <item name="basic_key_ly" type="id"/>
+    <item name="basic_key_tv" type="id"/>
+    <item name="basic_time_ly" type="id"/>
+    <item name="basic_time_tv" type="id"/>
+    <item name="basic_protect" type="id"/>
+
+    <item name="dialog_input" type="id"/>
+    <item name="dialog_title" type="id"/>
+    <item name="dialog_hint" type="id"/>
+    <item name="dialog_cancel" type="id"/>
+    <item name="dialog_sure" type="id"/>
+
+    <item name="dialog_goods_close" type="id"/>
+    <item name="dialog_goods_tab_ly" type="id"/>
+    <item name="dialog_goods_tab_list" type="id"/>
+    <item name="dialog_goods_search" type="id"/>
+    <item name="dialog_goods_search_ly" type="id"/>
+    <item name="dialog_goods_search_input" type="id"/>
+    <item name="dialog_goods_search_cancel" type="id"/>
+    <item name="dialog_goods_prod_list" type="id"/>
+
+    <item name="item_prod" type="id"/>
+    <item name="item_prod_iv" type="id"/>
+    <item name="item_prod_name" type="id"/>
+    <item name="item_prod_price" type="id"/>
+
+    <item name="device_back" type="id"/>
+    <item name="device_init" type="id"/>
+    <item name="device_error" type="id"/>
+    <item name="device_error_clear" type="id"/>
+    <item name="device_light" type="id"/>
+    <item name="device_status" type="id"/>
+    <item name="device_cabinet" type="id"/>
+    <item name="device_temperature" type="id"/>
+    <item name="device_debug" type="id"/>
+    <item name="device_door" type="id"/>
+
+    <item name="light_back" type="id"/>
+    <item name="light_box_1" type="id"/>
+    <item name="light_box_2" type="id"/>
+    <item name="light_take" type="id"/>
+
+    <item name="dialog_select_content" type="id"/>
+    <item name="dialog_select_cancel" type="id"/>
+    <item name="dialog_select_sure" type="id"/>
+
+    <item name="dialog_hint_content" type="id"/>
+    <item name="dialog_hint_status_ly" type="id"/>
+    <item name="dialog_hint_status_dev" type="id"/>
+    <item name="dialog_hint_status_door1" type="id"/>
+    <item name="dialog_hint_status_door2" type="id"/>
+    <item name="dialog_hint_status_msg" type="id"/>
+    <item name="dialog_hint_status_cabinet" type="id"/>
+    <item name="dialog_hint_sure" type="id"/>
+
+    <item name="about_back" type="id"/>
+    <item name="about_update" type="id"/>
+    <item name="about_version" type="id"/>
+
+    <item name="temp_back" type="id"/>
+    <item name="temp_clod" type="id"/>
+    <item name="temp_heat" type="id"/>
+    <item name="temp_current" type="id"/>
+    <item name="temp_scope" type="id"/>
+    <item name="temp_save" type="id"/>
+    <item name="temp_on_off" type="id"/>
+    <item name="temp_cold_ly" type="id"/>
+
+    <item name="dialog_radio_group" type="id"/>
+    <item name="dialog_radio_90" type="id"/>
+    <item name="dialog_radio_60" type="id"/>
+    <item name="dialog_radio_30" type="id"/>
+    <item name="dialog_radio_cancel" type="id"/>
+    <item name="dialog_radio_sure" type="id"/>
+
+    <!--净菜柜部分-->
+    <item name="dialog_shop_type_radio_group" type="id"/>
+    <item name="dialog_shop_type_radio_cetail" type="id"/>
+    <item name="dialog_shop_type_radio_cv" type="id"/>
+    <item name="dialog_shop_type_radio_cancel" type="id"/>
+    <item name="dialog_shop_type_radio_sure" type="id"/>
+
+    <item name="basic_shop_type" type="id" />
+    <item name="basic_shop_type_tv" type="id" />
+    <item name="cv_productName" type="id" />
+    <item name="cv_btnAdd" type="id" />
+    <item name="cv_btnSub" type="id" />
+    <item name="cv_commodityPrice" type="id" />
+    <item name="cv_commodityCount" type="id" />
+    <item name="cv_shop_car_list" type="id" />
+    <item name="cv_clearAll" type="id" />
+    <item name="cv_myOrder" type="id" />
+    <item name="cv_shop_car_bottom" type="id" />
+    <item name="cv_totalCommodityCount" type="id" />
+    <item name="cv_totalCommodityPrice" type="id" />
+    <item name="cv_emptyDataPrompt" type="id" />
+    <item name="cv_settlement" type="id" />
+    <item name="cv_confirmOrder" type="id" />
+    <item name="cv_pick_tip" type="id" />
+    <item name="cv_pick_up" type="id" />
+    <item name="cv_pickOrder" type="id" />
+    <item name="cv_pick_GetYetCount" type="id" />
+    <item name="cv_pick_settlement" type="id" />
+
+</resources>

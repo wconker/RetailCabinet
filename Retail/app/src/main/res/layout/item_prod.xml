@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/item_prod"
+    android:layout_width="match_parent"
+    android:layout_height="396dp"
+    android:background="@drawable/bg_white_corner_8dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="246dp">
+
+        <ImageView
+            android:id="@id/item_prod_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_def_big" />
+
+        <ImageView
+            android:id="@+id/item_dish_empty_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_sell_out"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/item_prod_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/black_48"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@id/item_prod_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="18dp"
+        android:textColor="@color/red_f6"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

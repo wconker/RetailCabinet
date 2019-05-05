@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CVMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_f3"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="540dp">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:banner_default_image="@drawable/ic_def_big"
+                app:scroll_time="2000" />
+
+
+            <com.sovell.retail_cabinet.widget.DefaultTitle
+                android:id="@+id/main_def_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bgTransparent="true" />
+        </RelativeLayout>
+
+        <!--用来显示mainfragment，由于remove存在问题，所以用这种分开显示-->
+        <!--隐藏的方式展示界面-->
+        <TextView
+            android:id="@+id/cv_view_net"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="请检查网络"
+            android:textSize="32sp" />
+        <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/cv_fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="720dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_corner"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="终端类型"
+        android:textColor="@color/black_48"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@id/dialog_shop_type_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@id/dialog_shop_type_radio_cetail"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:background="@color/white"
+            android:button="@null"
+            android:drawableStart="@drawable/press_point"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+            android:text="零售柜"
+            android:textColor="@color/black_48"
+            android:textSize="26sp" />
+
+        <RadioButton
+            android:id="@id/dialog_shop_type_radio_cv"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:background="@color/white"
+            android:button="@null"
+            android:drawableStart="@drawable/press_point"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+            android:text="净菜柜"
+            android:textColor="@color/black_48"
+            android:textSize="26sp" />
+
+
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_d9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp">
+
+        <Button
+            android:id="@id/dialog_shop_type_radio_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_corner"
+            android:text="取消"
+            android:textColor="@color/black_48"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_d9" />
+
+        <Button
+            android:id="@id/dialog_shop_type_radio_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_corner"
+            android:text="确定"
+            android:textColor="@color/red_f6"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

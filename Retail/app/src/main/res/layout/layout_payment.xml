@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易完成"
+            android:textColor="@color/black_48"
+            android:textSize="64sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="欢迎下次光临"
+            android:textColor="@color/gray_a2"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_success" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="已付"
+                android:textColor="@color/gray_a2"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/tv_success_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="￥0.00"
+                android:textColor="@color/red_f6"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_success_confirm"
+            android:layout_width="648dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/bg_confirm_btn_green"
+            android:gravity="center"
+            android:text="确定(10s)"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易失败"
+            android:textColor="@color/black_48"
+            android:textSize="64sp" />
+
+        <TextView
+            android:id="@+id/tv_fail_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="支付金额将会自动退回您的账户"
+            android:textColor="@color/gray_a2"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_failed" />
+
+        <LinearLayout
+            android:id="@+id/ll_fail_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="已付"
+                android:textColor="@color/gray_a2"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/tv_fail_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="￥0.00"
+                android:textColor="@color/red_f6"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_fail_confirm"
+            android:layout_width="648dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/bg_confirm_btn_red"
+            android:gravity="center"
+            android:text="确定(10s)"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f3"
+    android:orientation="vertical">
+
+    <com.sovell.retail_cabinet.widget.DefaultTitle
+        android:id="@+id/def_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@color/black_48">
+
+        <ImageView
+            android:id="@id/about_back"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:paddingStart="24dp"
+            android:paddingTop="30dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="30dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="关于"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="雄伟智能柜系统软件V1.0"
+            android:textColor="@color/black_48"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@id/about_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:textColor="@color/gray_a2"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@id/about_update"
+            android:layout_width="460dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/press_gray_border"
+            android:text="检查更新"
+            android:textColor="@color/black_48"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

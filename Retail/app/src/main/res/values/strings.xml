@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">智能柜</string>
+    <string name="in_payment">支付\n处理中</string>
+    <string name="in_shipment">出货中</string>
+
+    <string name="accessibility_service_description">智能安装服务，无需用户的任何操作就可以自动安装程序。</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

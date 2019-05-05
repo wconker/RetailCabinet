@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f3"
+    android:orientation="vertical">
+
+    <com.sovell.retail_cabinet.widget.DefaultTitle
+        android:id="@+id/def_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@color/black_48">
+
+        <ImageView
+            android:id="@id/set_back"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:paddingStart="24dp"
+            android:paddingTop="30dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="30dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/set_putaway_ly"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginBottom="27dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:gravity="center"
+            android:text="上货"
+            android:textColor="@color/black_48"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:background="@color/gray_eb" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/set_debug_ly"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:gravity="center"
+            android:text="货柜维护"
+            android:textColor="@color/black_48"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:background="@color/gray_eb" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/set_basics_ly"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:gravity="center"
+            android:text="基础配置"
+            android:textColor="@color/black_48"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:background="@color/gray_eb" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/set_about_ly"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@color/white"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="关于"
+            android:textColor="@color/black_48"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_right" />
+
+    </RelativeLayout>
+
+</LinearLayout>

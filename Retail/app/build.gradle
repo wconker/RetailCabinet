@@ -1,0 +1,119 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.sovell.retail_cabinet"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 13266
+        versionName "1.0.0.13266"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("./signature/RetailCabinet.jks")
+            storePassword "sovell123456"
+            keyAlias "RetailCabinet"
+            keyPassword "sovell123456"
+        }
+        release {
+            storeFile file("./signature/RetailCabinet.jks")
+            storePassword "sovell123456"
+            keyAlias "RetailCabinet"
+            keyPassword "sovell123456"
+        }
+    }
+
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                output -> outputFileName = "RetailCabinet_V" + defaultConfig.versionName + ".apk"
+            }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            buildConfigField "String", "PASS_API", "\"http://pre.sovell.com/\""
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled false
+            buildConfigField "String", "PASS_API", "\"http://pass.sovell.com/\""
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    defaultConfig {
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    /*数据库*/
+    implementation 'org.litepal.android:java:3.0.0'
+    /*基础对象工具类*/
+    implementation 'org.apache.commons:commons-lang3:3.6'
+    /*Glide图片加载*/
+    implementation('com.github.bumptech.glide:glide:4.8.0') {
+        exclude group: "com.android.support"
+    }
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    /*打印*/
+    implementation 'com.jakewharton.timber:timber:4.5.1'
+    /*ButterKnife框架*/
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    /*RxJava*/
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.16'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    /*RxBinding*/
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+    implementation 'com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0'
+    implementation 'com.jakewharton.rxbinding2:rxbinding-appcompat-v7:2.0.0'
+    /*Retrofit2*/
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation('com.squareup.retrofit2:converter-simplexml:2.3.0') {
+        exclude module: 'stax-api'
+        exclude module: 'stax'
+        exclude module: 'xpp3'
+    }
+    /*权限检查*/
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    /*广告banner*/
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation files('libs/fastjson-1.2.47.jar')
+    implementation files('libs/sovell-card-1.0.1.jar')
+    /*19.3.8_通用adapter*/
+    implementation 'com.zhy:base-rvadapter:3.0.3'
+
+    /*二维码模块*/
+    implementation 'com.google.zxing:core:3.3.0'
+
+
+    /*   腾讯bugly 监控*/
+    implementation 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+
+
+}

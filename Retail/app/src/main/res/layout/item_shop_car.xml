@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_shop_car_item"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@id/cv_productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="油菜花"
+        android:textColor="@color/black_48"
+        android:textSize="28sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+
+            android:id="@id/cv_commodityPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="￥12元"
+            android:textColor="@color/black_48"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@id/cv_btnSub"
+
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_circle_sub" />
+
+            <TextView
+                android:id="@id/cv_commodityCount"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:id="@id/cv_btnAdd"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_circle_add" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

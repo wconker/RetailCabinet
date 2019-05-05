@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_pay_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp">
+
+        <TextView
+            android:id="@+id/tv_pay_close"
+            android:layout_width="148dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/border_gray_white_cc"
+            android:gravity="center"
+            android:text="关闭(90s)"
+            android:textColor="@color/black_48"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:background="@drawable/border_gray_white_cc">
+
+        <ImageView
+            android:id="@+id/iv_goods_img"
+            android:layout_width="220dp"
+            android:layout_height="164dp"
+            android:layout_marginEnd="24dp" />
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/iv_goods_img"
+            android:maxLines="1"
+            android:text="康师傅红烧牛肉面桶装200g"
+            android:textColor="@color/black_48"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_goods_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_goods_name"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@+id/iv_goods_img"
+            android:maxLines="2"
+            android:text="康师傅红烧牛肉面，为康师傅品牌旗下一种典型的方便面口味，延续了康师傅方便面一贯的丰富配料与口碑。其知名度是康师傅一系列最出色的之一。"
+            android:textColor="@color/gray_a2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/iv_goods_img"
+            android:text="￥12.00"
+            android:textColor="@color/black_48"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pay_by_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请刷卡支付"
+            android:textColor="@color/black_48"
+            android:textSize="52sp" />
+
+        <TextView
+            android:id="@+id/tv_pay_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="￥12.00"
+            android:textColor="@color/red_f6"
+            android:textSize="77sp" />
+
+        <ImageView
+            android:id="@+id/iv_card_pay"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_card_prompt"
+            android:visibility="visible" />
+
+        <RelativeLayout
+
+            android:id="@+id/rl_qr_pay"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:background="@color/gray_f3"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/paymentMode"
+                android:layout_width="456dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_alpay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="-4dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:src="@drawable/ic_alipay" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="支付宝"
+                            android:textSize="26sp" />
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/iv_ali_badge"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="bottom|right"
+                            android:src="@drawable/ic_badge" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_wechat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_black"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:src="@drawable/ic_wechat" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="微信"
+                            android:textSize="26sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_wechat_badge"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="bottom|right"
+                            android:src="@drawable/ic_badge"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="456dp"
+                android:layout_height="388dp"
+                android:layout_below="@+id/paymentMode"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/border_white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <FrameLayout
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/qr_code"
+                        android:layout_width="400dp"
+                        android:layout_height="400dp"
+                        android:layout_gravity="center"
+                        android:visibility="visible" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_qrloading"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#BF000000"
+                        android:visibility="visible">
+
+                        <ProgressBar
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_centerInParent="true"
+                            android:indeterminateBehavior="repeat"
+                            android:indeterminateDrawable="@drawable/dialog_loading_anim" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="加载中"
+                            android:textColor="@color/white"
+                            android:textSize="28sp" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="70dp">
+
+            <TextView
+              android:padding="0dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/tv_wanna_qr"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="我要扫码支付"
+                android:textColor="@color/red_f6"
+                android:textSize="30sp" />
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tv_wanna_qr"
+                android:src="@drawable/ic_turn_right"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_pay_processing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/dialog_loading_anim" />
+
+        <TextView
+            android:id="@+id/tv_pay_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/in_payment"
+            android:textColor="#ffa2a5b0"
+            android:textSize="48sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pay_take_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请取走您的商品"
+            android:textColor="@color/black_48"
+            android:textSize="52sp" />
+
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_please_pick" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

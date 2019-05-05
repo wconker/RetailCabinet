@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="RetailCabinet" />
+    <version value="1" />
+
+    <list>
+        <mapping class="com.sovell.retail_cabinet.bean.GoodsBean" />
+    </list>
+</litepal>

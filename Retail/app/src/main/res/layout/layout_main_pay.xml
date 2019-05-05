@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1280dp"
+    android:background="@drawable/bg_white_corner_8_0dp">
+    <!--android:layout_height="1380dp"-->
+
+
+    <com.sovell.retail_cabinet.widget.PayDetailsView
+        android:id="@+id/payDetailsView"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <com.sovell.retail_cabinet.widget.PaymentView
+        android:id="@+id/paymentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

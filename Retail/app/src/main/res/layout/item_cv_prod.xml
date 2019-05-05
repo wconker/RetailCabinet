@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/item_prod"
+    android:layout_width="328dp"
+    android:layout_height="365dp"
+    android:background="@drawable/bg_white_corner_8dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="246dp">
+
+        <ImageView
+            android:id="@id/item_prod_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_def_big" />
+
+        <ImageView
+            android:id="@+id/item_dish_empty_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_sell_out"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/item_prod_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="7dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="2"
+        tools:text="水果"
+        android:textColor="@color/black_48"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@id/item_prod_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/red_f6"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            tools:text="油麦菜" />
+
+        <ImageView
+
+            android:layout_marginEnd="24dp"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_shop_car" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="560dp"
+    android:layout_height="520dp"
+    android:background="@drawable/bg_white_circle"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/cv_pick_ll_fail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ic_failed" />
+
+
+        <TextView
+            android:id="@+id/cv_pick_fail_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:textColor="@color/gray_a2"
+            android:textSize="48sp"
+            tools:text="支付金额将会自动退回您的账户" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="请重试或联系客服"
+            android:textColor="@color/gray_a2"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/tv_close_confirm"
+            android:layout_width="400dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_confirm_btn_green"
+            android:gravity="center"
+            android:text="关闭"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cv_pick_ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            android:gravity="center"
+            android:text="正在出货"
+            android:textColor="@color/gray_a2"
+            android:textSize="34sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/dialog_loading_anim" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cv_pick_ll_wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:gravity="center"
+            android:text="请取走您的货物"
+            android:textColor="@color/gray_a2"
+            android:textSize="34sp" />
+
+        <TextView
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="取出当前商品才可以取下一个商品哦"
+            android:textColor="#ffa2a5b0"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_pick_wait" />
+    </LinearLayout>
+
+
+</LinearLayout>

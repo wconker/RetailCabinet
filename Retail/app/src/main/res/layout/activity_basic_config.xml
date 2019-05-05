@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.sovell.retail_cabinet.widget.DefaultTitle
+        android:id="@+id/def_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@color/black_48">
+
+        <ImageView
+            android:id="@id/basic_back"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:paddingStart="24dp"
+            android:paddingTop="30dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="30dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="基础配置"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/basic_api_ly"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:gravity="center"
+            android:text="API地址"
+            android:textColor="@color/black_48"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@id/basic_api_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="70dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textColor="@color/black_48"
+            android:textColorHint="@color/gray_a2"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:background="@color/gray_eb" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/basic_shop_type"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:gravity="center"
+            android:text="终端类型"
+            android:textColor="@color/black_48"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@id/basic_shop_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="70dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textColor="@color/black_48"
+            android:textColorHint="@color/gray_a2"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:background="@color/gray_eb" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="配对码"
+                android:textColor="@color/black_48"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="输入API地址后激活"
+                android:textColor="@color/gray_a2"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@id/basic_code_btn"
+            android:layout_width="126dp"
+            android:layout_height="54dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/press_gray"
+            android:text="配对码"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:background="@color/gray_eb" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/basic_shop_ly"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:gravity="center"
+            android:text="餐厅编号"
+            android:textColor="@color/black_48"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@id/basic_shop_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="70dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textColor="@color/black_48"
+            android:textColorHint="@color/gray_a2"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:background="@color/gray_eb" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/basic_term_ly"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:gravity="center"
+            android:text="终端编号"
+            android:textColor="@color/black_48"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@id/basic_term_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="70dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textColor="@color/black_48"
+            android:textColorHint="@color/gray_a2"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:background="@color/gray_eb" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/basic_key_ly"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:gravity="center"
+            android:text="通讯密钥"
+            android:textColor="@color/black_48"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@id/basic_key_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="70dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textColor="@color/black_48"
+            android:textColorHint="@color/gray_a2"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_right" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/basic_time_ly"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:gravity="center"
+            android:text="退出倒计时"
+            android:textColor="@color/black_48"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@id/basic_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="70dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textColor="@color/black_48"
+            android:textColorHint="@color/gray_a2"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_right" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:gravity="center"
+            android:text="进程守护"
+            android:textColor="@color/black_48"
+            android:textSize="25sp" />
+
+        <ToggleButton
+            android:id="@id/basic_protect"
+            android:layout_width="78dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/bg_toggle"
+            android:textOff=""
+            android:textOn="" />
+
+    </RelativeLayout>
+
+</LinearLayout>

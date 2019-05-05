@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/cv_pick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            tools:text="牛肉"
+            android:textColor="#ff484e63"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/cv_error_point"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_error_point"
+            android:gravity="center"
+            android:text="!"
+            android:textColor="#ffffffff"
+            android:textSize="13sp"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/cv_pick_success"
+        android:layout_marginRight="60dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_success_green" />
+
+    <TextView
+
+        android:id="@+id/cv_pick_opt"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_red_corner"
+        android:gravity="center"
+        android:text="取"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:visibility="gone" />
+</LinearLayout>

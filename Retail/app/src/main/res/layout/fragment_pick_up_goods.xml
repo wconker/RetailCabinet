@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragment.PickUpGoodsFragment">
+
+    <include layout="@layout/view_back" />
+
+    <LinearLayout
+        android:id="@id/cv_pick_tip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="请刷卡取货"
+            android:textColor="@color/black_48"
+            android:textSize="52sp" />
+
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="94dp"
+            android:src="@drawable/ic_card_prompt" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/cv_pick_up"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@id/cv_pickOrder"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/cv__confirm_car_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@id/cv_pick_GetYetCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:gravity="center"
+                    android:textColor="@color/black_48"
+                    android:textSize="28sp"
+                    tools:text="已取1/5份" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cv_pick_once"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/red_f6"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一键取货"
+                    android:textColor="@color/white"
+                    android:textSize="42sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cv_pick_finish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:text="取货完成"
+            android:textColor="#ff484e63"
+            android:textSize="64sp" />
+
+        <TextView
+            android:layout_width="504dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="物品已全部取完，欢迎下次光临"
+            android:textColor="#ffa2a5b0"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_success" />
+
+        <LinearLayout
+            android:id="@+id/cv_pick_finish_ll"
+            android:layout_width="648dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/bg_confirm_btn_green">
+
+            <TextView
+                android:id="@+id/cv_pick_finish_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="确定(10s)"
+                android:textColor="#ffffffff"
+                android:textSize="36sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

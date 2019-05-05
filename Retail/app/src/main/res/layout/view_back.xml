@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingEnd="24dp"
+    android:paddingStart="24dp"
+    android:layout_height="108dp">
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="148dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/border_gray_white_cc"
+        android:gravity="center"
+        android:text="返回(90s)"
+        android:textColor="@color/black_48"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>
